@@ -78,9 +78,12 @@ k3.addEventListener('input', function () {
 
 
 // warna bgcolor body dengan pakai posisi koordinat kursor
-document.body.style.height = '100%'
-document.body.addEventListener('mousemove', function (e) {
-  const red = Math.round((e.clientX / innerWidth) * 255)
-  const gree = Math.round((e.clientY / innerHeight) * 255)
-  document.body.style.backgroundColor = 'rgb(' + red + ',' + gree + ',88)'
-})
+tanya = confirm('mau coba nentuin warna pake koordinat mouse/touchscreen?')
+if (tanya == true) {
+  document.body.style.height = '100%'
+  document.body.addEventListener('mousemove', function (e) {
+    const red = Math.round((e.clientX / innerWidth) * 255)
+    const gree = Math.round((e.clientY / innerHeight) * 255)
+    document.body.style.backgroundColor = 'rgb(' + red + ',' + gree + ',88)'
+  })
+}
