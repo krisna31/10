@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan-DOM</title>
+  <style>
+    * {
+      margin: 8px auto;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .abuAbu {
+      background-color: grey;
+    }
+
+    .kotak {
+      height: 20px;
+      width: 20px;
+      box-sizing: border-box margin-left: -50px;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bermain Dengan Warna</h1>
+  <ul>
+    <li>
+      <h3>Warna Background</h3>
+    </li>
+    <li><button type="button" id="bg1">LightBlue</button></li>
+    <li><button type="button">LightGreen</button></li>
+    <li><button type="button" class="toggle">Grey_[toogle]</button></li>
+    <li id="liBaru"></li>
+  </ul>
+
+  <div class="kotak red"></div>
+  <input type="range" name="sred" min="0" max="255" />
+  <div class="kotak green"></div>
+  <input type="range" name="sgreen" min="0" max="255" />
+  <div class="kotak blue"></div>
+  <input type="range" name="sblue" min="0" max="255" />
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
